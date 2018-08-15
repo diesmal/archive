@@ -1,0 +1,10 @@
+#!/bin/bash
+
+scale=$(( $1 / 40.0 ))
+echo $scale
+
+for f in *.pdf
+do
+	echo $file
+#	/Users/inikolaenko/scripts/cpdf/cpdf -scale-page "$scale $scale" $f -o $f 
+done

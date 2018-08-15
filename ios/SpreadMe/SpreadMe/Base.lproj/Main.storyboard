@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7TX-X5-Vkk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner-->
+        <scene sceneID="Ixh-QZ-pLk">
+            <objects>
+                <viewController id="ij2-3n-2ae" customClass="QRCodeReaderViewController" customModule="SpreadMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hWD-5p-JPg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdx-fR-ak8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gdx-fR-ak8" firstAttribute="leading" secondItem="s3E-Oo-CzS" secondAttribute="leading" id="ThK-rw-FRV"/>
+                            <constraint firstItem="gdx-fR-ak8" firstAttribute="top" secondItem="s3E-Oo-CzS" secondAttribute="top" id="X6l-rp-b3e"/>
+                            <constraint firstItem="gdx-fR-ak8" firstAttribute="trailing" secondItem="s3E-Oo-CzS" secondAttribute="trailing" id="ZX4-OM-JRM"/>
+                            <constraint firstItem="s3E-Oo-CzS" firstAttribute="bottom" secondItem="gdx-fR-ak8" secondAttribute="bottom" id="llW-Jd-Rp8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s3E-Oo-CzS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="EPK-Le-O88"/>
+                    <navigationItem key="navigationItem" title="Scanner" id="8km-yW-OBj"/>
+                    <connections>
+                        <outlet property="preview" destination="gdx-fR-ak8" id="udz-AQ-Sqz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oN4-Wr-gbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="-287"/>
+        </scene>
+        <!--My contact-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MyContactViewController" customModule="SpreadMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXi-MU-4LV">
+                                <rect key="frame" x="99" y="349.5" width="177" height="32"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                <state key="normal" title="Choose my contact">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSelectContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hzi-WW-Eft"/>
+                                </connections>
+                            </button>
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv9-Rb-gxW">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="U4X-Pz-6c7"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="trash" id="waZ-BP-uMS">
+                                        <connections>
+                                            <action selector="onTrash:" destination="BYZ-38-t0r" id="dsM-ib-LSJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kew-Sd-BsC"/>
+                                    <barButtonItem systemItem="camera" id="c18-zC-HJ5">
+                                        <connections>
+                                            <segue destination="ij2-3n-2ae" kind="show" id="Jcv-ID-sgy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1yP-6L-uxk"/>
+                                    <barButtonItem systemItem="action" id="0cR-hH-QT2">
+                                        <connections>
+                                            <action selector="onAction:" destination="BYZ-38-t0r" id="T9u-Oj-pJc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-IR-wxt">
+                                <rect key="frame" x="10" y="156" width="355" height="355"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="biQ-IR-wxt" secondAttribute="height" multiplier="1:1" id="FOh-tD-ScC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="biQ-IR-wxt" secondAttribute="trailing" constant="10" id="1SB-H3-4jW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yv9-Rb-gxW" secondAttribute="trailing" id="2G6-VC-JwC"/>
+                            <constraint firstItem="yv9-Rb-gxW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="biQ-IR-wxt" secondAttribute="bottom" priority="750" constant="10" id="5jE-6I-ydu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="biQ-IR-wxt" secondAttribute="trailing" priority="250" constant="10" id="EOm-sC-uAY"/>
+                            <constraint firstItem="yv9-Rb-gxW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fwb-Nc-fdD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yv9-Rb-gxW" secondAttribute="bottom" id="cma-p5-47j"/>
+                            <constraint firstItem="GXi-MU-4LV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eIR-nd-vQE"/>
+                            <constraint firstItem="GXi-MU-4LV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ejh-0o-I02"/>
+                            <constraint firstItem="biQ-IR-wxt" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-32" id="iWj-vm-d8R"/>
+                            <constraint firstItem="biQ-IR-wxt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lXO-vS-z8v"/>
+                            <constraint firstItem="biQ-IR-wxt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wpC-pf-O7d"/>
+                            <constraint firstItem="biQ-IR-wxt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="250" constant="10" id="yqO-OM-t7w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Y7b-oQ-ZKd"/>
+                    <navigationItem key="navigationItem" title="My contact" largeTitleDisplayMode="always" id="h8j-lJ-ZOv"/>
+                    <connections>
+                        <outlet property="chooseContactButton" destination="GXi-MU-4LV" id="gc9-SS-XON"/>
+                        <outlet property="qrCodeImageView" destination="biQ-IR-wxt" id="y5x-m0-XFb"/>
+                        <outlet property="toolBar" destination="yv9-Rb-gxW" id="3VX-8v-4Qb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759" y="-287"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="7DN-QM-m88">
+            <objects>
+                <navigationController id="7TX-X5-Vkk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="goA-la-qyJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h84-5W-ats">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vwt-K5-nCA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aa4-20-MFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1516" y="-287"/>
+        </scene>
+    </scenes>
+</document>
