@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0212597121DCE2C200809823 /* HDXMoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABECC21DCCEB100FA2854 /* HDXMoviesList.swift */; };
+		0212597221DCE2CC00809823 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEB821D9F58300FA2854 /* Log.swift */; };
+		0212597321DCE33B00809823 /* HDXMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABECB21DCCEB100FA2854 /* HDXMovie.swift */; };
+		0212597621DCF88C00809823 /* test_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0212597521DCF88C00809823 /* test_data.json */; };
+		0212597821DD07CB00809823 /* HDXRandomRatingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212597721DD07CB00809823 /* HDXRandomRatingService.swift */; };
+		025ABEA321D8A6F000FA2854 /* HXDAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025ABE9B21D8A6F000FA2854 /* HXDAssets.xcassets */; };
+		025ABEA421D8A6F000FA2854 /* HXDAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABE9D21D8A6F000FA2854 /* HXDAppDelegate.swift */; };
+		025ABEA521D8A6F000FA2854 /* HXDLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025ABEA021D8A6F000FA2854 /* HXDLaunchScreen.storyboard */; };
+		025ABEA621D8A6F000FA2854 /* HXDMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025ABEA121D8A6F000FA2854 /* HXDMain.storyboard */; };
+		025ABEAB21D8A81C00FA2854 /* HDXListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEAA21D8A81C00FA2854 /* HDXListViewController.swift */; };
+		025ABEAE21D8AB4300FA2854 /* HDXMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEAD21D8AB4300FA2854 /* HDXMovieTableViewCell.swift */; };
+		025ABEB021D8CF9700FA2854 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 025ABEAF21D8CF9700FA2854 /* data.json */; };
+		025ABEB221D8E4CD00FA2854 /* HDXMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEB121D8E4CD00FA2854 /* HDXMovieService.swift */; };
+		025ABEB721D9F4C300FA2854 /* HDXListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEB621D9F4C300FA2854 /* HDXListViewModel.swift */; };
+		025ABEB921D9F58300FA2854 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEB821D9F58300FA2854 /* Log.swift */; };
+		025ABEBB21D9F6CA00FA2854 /* HDXMoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEBA21D9F6CA00FA2854 /* HDXMoviesListViewModel.swift */; };
+		025ABEBD21D9F9B100FA2854 /* HDXListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEBC21D9F9B100FA2854 /* HDXListAssembly.swift */; };
+		025ABEC021D9F9EA00FA2854 /* HDXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEBF21D9F9EA00FA2854 /* HDXBaseViewController.swift */; };
+		025ABEC221D9F9F700FA2854 /* HDXAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEC121D9F9F700FA2854 /* HDXAssembly.swift */; };
+		025ABEC421DA29F700FA2854 /* HDXMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEC321DA29F700FA2854 /* HDXMoviesTests.swift */; };
+		025ABEC521DCBDC800FA2854 /* HDXMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABEB121D8E4CD00FA2854 /* HDXMovieService.swift */; };
+		025ABECA21DCC72B00FA2854 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025ABEC921DCC72B00FA2854 /* RxSwift.framework */; };
+		025ABECD21DCCEB100FA2854 /* HDXMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABECB21DCCEB100FA2854 /* HDXMovie.swift */; };
+		025ABECE21DCCEB100FA2854 /* HDXMoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABECC21DCCEB100FA2854 /* HDXMoviesList.swift */; };
+		025ABED221DCD4EC00FA2854 /* HDXRateAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABED121DCD4EC00FA2854 /* HDXRateAlert.swift */; };
+		025ABED421DCDAE400FA2854 /* HDXListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABED321DCDAE400FA2854 /* HDXListRouter.swift */; };
+		025ABED621DCDB1B00FA2854 /* HDXRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025ABED521DCDB1B00FA2854 /* HDXRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02C4615621D8A4F900F621C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C4613921D8A4F800F621C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C4614021D8A4F800F621C2;
+			remoteInfo = HexadTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0212597521DCF88C00809823 /* test_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_data.json; sourceTree = "<group>"; };
+		0212597721DD07CB00809823 /* HDXRandomRatingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXRandomRatingService.swift; sourceTree = "<group>"; };
+		025ABE9B21D8A6F000FA2854 /* HXDAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HXDAssets.xcassets; sourceTree = "<group>"; };
+		025ABE9D21D8A6F000FA2854 /* HXDAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXDAppDelegate.swift; sourceTree = "<group>"; };
+		025ABEA021D8A6F000FA2854 /* HXDLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HXDLaunchScreen.storyboard; sourceTree = "<group>"; };
+		025ABEA121D8A6F000FA2854 /* HXDMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HXDMain.storyboard; sourceTree = "<group>"; };
+		025ABEA821D8A70700FA2854 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025ABEAA21D8A81C00FA2854 /* HDXListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXListViewController.swift; sourceTree = "<group>"; };
+		025ABEAD21D8AB4300FA2854 /* HDXMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXMovieTableViewCell.swift; sourceTree = "<group>"; };
+		025ABEAF21D8CF9700FA2854 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		025ABEB121D8E4CD00FA2854 /* HDXMovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXMovieService.swift; sourceTree = "<group>"; };
+		025ABEB621D9F4C300FA2854 /* HDXListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXListViewModel.swift; sourceTree = "<group>"; };
+		025ABEB821D9F58300FA2854 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		025ABEBA21D9F6CA00FA2854 /* HDXMoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXMoviesListViewModel.swift; sourceTree = "<group>"; };
+		025ABEBC21D9F9B100FA2854 /* HDXListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXListAssembly.swift; sourceTree = "<group>"; };
+		025ABEBF21D9F9EA00FA2854 /* HDXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXBaseViewController.swift; sourceTree = "<group>"; };
+		025ABEC121D9F9F700FA2854 /* HDXAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXAssembly.swift; sourceTree = "<group>"; };
+		025ABEC321DA29F700FA2854 /* HDXMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXMoviesTests.swift; sourceTree = "<group>"; };
+		025ABEC921DCC72B00FA2854 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		025ABECB21DCCEB100FA2854 /* HDXMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDXMovie.swift; sourceTree = "<group>"; };
+		025ABECC21DCCEB100FA2854 /* HDXMoviesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDXMoviesList.swift; sourceTree = "<group>"; };
+		025ABED121DCD4EC00FA2854 /* HDXRateAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXRateAlert.swift; sourceTree = "<group>"; };
+		025ABED321DCDAE400FA2854 /* HDXListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDXListRouter.swift; sourceTree = "<group>"; };
+		025ABED521DCDB1B00FA2854 /* HDXRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDXRouter.swift; sourceTree = "<group>"; };
+		02C4614121D8A4F800F621C2 /* HexadTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexadTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C4615521D8A4F900F621C2 /* HexadTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexadTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C4615B21D8A4F900F621C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02C4613E21D8A4F800F621C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025ABECA21DCC72B00FA2854 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C4615221D8A4F900F621C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0212597421DCF86B00809823 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0212597521DCF88C00809823 /* test_data.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		025ABE9721D8A6F000FA2854 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEBE21D9F9D900FA2854 /* Base */,
+				025ABE9821D8A6F000FA2854 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		025ABE9821D8A6F000FA2854 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEBC21D9F9B100FA2854 /* HDXListAssembly.swift */,
+				025ABEAA21D8A81C00FA2854 /* HDXListViewController.swift */,
+				025ABEB621D9F4C300FA2854 /* HDXListViewModel.swift */,
+				025ABECF21DCD4CB00FA2854 /* Router */,
+				025ABEB521D9F4A000FA2854 /* ViewModels */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		025ABE9921D8A6F000FA2854 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				025ABECB21DCCEB100FA2854 /* HDXMovie.swift */,
+				025ABECC21DCCEB100FA2854 /* HDXMoviesList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		025ABE9A21D8A6F000FA2854 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				025ABE9B21D8A6F000FA2854 /* HXDAssets.xcassets */,
+				025ABEAF21D8CF9700FA2854 /* data.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		025ABE9C21D8A6F000FA2854 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				025ABE9D21D8A6F000FA2854 /* HXDAppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		025ABE9E21D8A6F000FA2854 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				025ABED021DCD4DE00FA2854 /* Alerts */,
+				025ABEAC21D8AB1B00FA2854 /* Cells */,
+				025ABE9F21D8A6F000FA2854 /* Storyboards */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		025ABE9F21D8A6F000FA2854 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEA121D8A6F000FA2854 /* HXDMain.storyboard */,
+				025ABEA021D8A6F000FA2854 /* HXDLaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		025ABEA221D8A6F000FA2854 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0212597721DD07CB00809823 /* HDXRandomRatingService.swift */,
+				025ABEB121D8E4CD00FA2854 /* HDXMovieService.swift */,
+				025ABEB821D9F58300FA2854 /* Log.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		025ABEA721D8A70700FA2854 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEA821D8A70700FA2854 /* Info.plist */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		025ABEAC21D8AB1B00FA2854 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEAD21D8AB4300FA2854 /* HDXMovieTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		025ABEB521D9F4A000FA2854 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEBA21D9F6CA00FA2854 /* HDXMoviesListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		025ABEBE21D9F9D900FA2854 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEC121D9F9F700FA2854 /* HDXAssembly.swift */,
+				025ABEBF21D9F9EA00FA2854 /* HDXBaseViewController.swift */,
+				025ABED521DCDB1B00FA2854 /* HDXRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		025ABEC821DCC72B00FA2854 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEC921DCC72B00FA2854 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		025ABECF21DCD4CB00FA2854 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				025ABED321DCDAE400FA2854 /* HDXListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		025ABED021DCD4DE00FA2854 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				025ABED121DCD4EC00FA2854 /* HDXRateAlert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		02C4613821D8A4F800F621C2 = {
+			isa = PBXGroup;
+			children = (
+				02C4614321D8A4F800F621C2 /* HexadTestApp */,
+				02C4615821D8A4F900F621C2 /* HexadTestAppTests */,
+				02C4614221D8A4F800F621C2 /* Products */,
+				025ABEC821DCC72B00FA2854 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02C4614221D8A4F800F621C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02C4614121D8A4F800F621C2 /* HexadTestApp.app */,
+				02C4615521D8A4F900F621C2 /* HexadTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02C4614321D8A4F800F621C2 /* HexadTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				025ABE9C21D8A6F000FA2854 /* Application */,
+				025ABE9921D8A6F000FA2854 /* Models */,
+				025ABE9721D8A6F000FA2854 /* Modules */,
+				025ABEA221D8A6F000FA2854 /* Services */,
+				025ABE9E21D8A6F000FA2854 /* UI */,
+				025ABE9A21D8A6F000FA2854 /* Resources */,
+				025ABEA721D8A70700FA2854 /* Configs */,
+			);
+			path = HexadTestApp;
+			sourceTree = "<group>";
+		};
+		02C4615821D8A4F900F621C2 /* HexadTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				025ABEC321DA29F700FA2854 /* HDXMoviesTests.swift */,
+				02C4615B21D8A4F900F621C2 /* Info.plist */,
+				0212597421DCF86B00809823 /* Resources */,
+			);
+			path = HexadTestAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02C4614021D8A4F800F621C2 /* HexadTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C4615E21D8A4F900F621C2 /* Build configuration list for PBXNativeTarget "HexadTestApp" */;
+			buildPhases = (
+				02C4613D21D8A4F800F621C2 /* Sources */,
+				02C4613E21D8A4F800F621C2 /* Frameworks */,
+				02C4613F21D8A4F800F621C2 /* Resources */,
+				025ABEC721DCC6CC00FA2854 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HexadTestApp;
+			productName = HexadTestApp;
+			productReference = 02C4614121D8A4F800F621C2 /* HexadTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02C4615421D8A4F900F621C2 /* HexadTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C4616121D8A4F900F621C2 /* Build configuration list for PBXNativeTarget "HexadTestAppTests" */;
+			buildPhases = (
+				02C4615121D8A4F900F621C2 /* Sources */,
+				02C4615221D8A4F900F621C2 /* Frameworks */,
+				02C4615321D8A4F900F621C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02C4615721D8A4F900F621C2 /* PBXTargetDependency */,
+			);
+			name = HexadTestAppTests;
+			productName = HexadTestAppTests;
+			productReference = 02C4615521D8A4F900F621C2 /* HexadTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02C4613921D8A4F800F621C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ilia Nikolaenko";
+				TargetAttributes = {
+					02C4614021D8A4F800F621C2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					02C4615421D8A4F900F621C2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 02C4614021D8A4F800F621C2;
+					};
+				};
+			};
+			buildConfigurationList = 02C4613C21D8A4F800F621C2 /* Build configuration list for PBXProject "HexadTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02C4613821D8A4F800F621C2;
+			productRefGroup = 02C4614221D8A4F800F621C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02C4614021D8A4F800F621C2 /* HexadTestApp */,
+				02C4615421D8A4F900F621C2 /* HexadTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02C4613F21D8A4F800F621C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025ABEA621D8A6F000FA2854 /* HXDMain.storyboard in Resources */,
+				025ABEA521D8A6F000FA2854 /* HXDLaunchScreen.storyboard in Resources */,
+				025ABEA321D8A6F000FA2854 /* HXDAssets.xcassets in Resources */,
+				025ABEB021D8CF9700FA2854 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C4615321D8A4F900F621C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0212597621DCF88C00809823 /* test_data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025ABEC721DCC6CC00FA2854 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02C4613D21D8A4F800F621C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025ABEAE21D8AB4300FA2854 /* HDXMovieTableViewCell.swift in Sources */,
+				025ABEB721D9F4C300FA2854 /* HDXListViewModel.swift in Sources */,
+				025ABEC021D9F9EA00FA2854 /* HDXBaseViewController.swift in Sources */,
+				025ABED621DCDB1B00FA2854 /* HDXRouter.swift in Sources */,
+				025ABED421DCDAE400FA2854 /* HDXListRouter.swift in Sources */,
+				0212597821DD07CB00809823 /* HDXRandomRatingService.swift in Sources */,
+				025ABECE21DCCEB100FA2854 /* HDXMoviesList.swift in Sources */,
+				025ABED221DCD4EC00FA2854 /* HDXRateAlert.swift in Sources */,
+				025ABEB221D8E4CD00FA2854 /* HDXMovieService.swift in Sources */,
+				025ABEBD21D9F9B100FA2854 /* HDXListAssembly.swift in Sources */,
+				025ABECD21DCCEB100FA2854 /* HDXMovie.swift in Sources */,
+				025ABEB921D9F58300FA2854 /* Log.swift in Sources */,
+				025ABEA421D8A6F000FA2854 /* HXDAppDelegate.swift in Sources */,
+				025ABEC221D9F9F700FA2854 /* HDXAssembly.swift in Sources */,
+				025ABEBB21D9F6CA00FA2854 /* HDXMoviesListViewModel.swift in Sources */,
+				025ABEAB21D8A81C00FA2854 /* HDXListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C4615121D8A4F900F621C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0212597121DCE2C200809823 /* HDXMoviesList.swift in Sources */,
+				025ABEC421DA29F700FA2854 /* HDXMoviesTests.swift in Sources */,
+				0212597221DCE2CC00809823 /* Log.swift in Sources */,
+				0212597321DCE33B00809823 /* HDXMovie.swift in Sources */,
+				025ABEC521DCBDC800FA2854 /* HDXMovieService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02C4615721D8A4F900F621C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C4614021D8A4F800F621C2 /* HexadTestApp */;
+			targetProxy = 02C4615621D8A4F900F621C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02C4615C21D8A4F900F621C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02C4615D21D8A4F900F621C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02C4615F21D8A4F900F621C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R652HBQ74;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/HexadTestApp/Configs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikolaenko.HexadTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02C4616021D8A4F900F621C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R652HBQ74;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/HexadTestApp/Configs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikolaenko.HexadTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		02C4616221D8A4F900F621C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R652HBQ74;
+				INFOPLIST_FILE = HexadTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikolaenko.HexadTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexadTestApp.app/HexadTestApp";
+			};
+			name = Debug;
+		};
+		02C4616321D8A4F900F621C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R652HBQ74;
+				INFOPLIST_FILE = HexadTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikolaenko.HexadTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexadTestApp.app/HexadTestApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02C4613C21D8A4F800F621C2 /* Build configuration list for PBXProject "HexadTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C4615C21D8A4F900F621C2 /* Debug */,
+				02C4615D21D8A4F900F621C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C4615E21D8A4F900F621C2 /* Build configuration list for PBXNativeTarget "HexadTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C4615F21D8A4F900F621C2 /* Debug */,
+				02C4616021D8A4F900F621C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C4616121D8A4F900F621C2 /* Build configuration list for PBXNativeTarget "HexadTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C4616221D8A4F900F621C2 /* Debug */,
+				02C4616321D8A4F900F621C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02C4613921D8A4F800F621C2 /* Project object */;
+}

@@ -1,0 +1,10 @@
+{
+    "movies": [
+        { "id": 0, "name": "The Shawshank Redemption", "rating": 5, "votes": 1 },
+        { "id": 5, "name": "Pulp Fiction", "rating": 4.0, "votes": 1 },
+        { "id": 10, "name": "Fight Club", "rating": 3.0, "votes": 1 },
+        { "id": 15, "name": "The Matrix", "rating": 2.0, "votes": 1 },
+        { "id": 20, "name": "City of God", "rating": 1.0, "votes": 1 },
+        { "id": 23, "name": "Life Is Beautiful", "rating": 0.0, "votes": 1 }
+    ]
+}

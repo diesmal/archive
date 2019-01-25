@@ -1,0 +1,28 @@
+{
+    "movies": [
+        { "id": 0, "name": "The Shawshank Redemption", "rating": 5.0, "votes": 1 },
+        { "id": 1, "name": "The Godfather", "rating": 4.8, "votes": 1 },
+        { "id": 2, "name": "The Dark Knight", "rating": 4.6, "votes": 1 },
+        { "id": 3, "name": "The Godfather: Part II", "rating": 4.4, "votes": 1 },
+        { "id": 4, "name": "The Lord of the Rings: The Return of the King", "rating": 4.2, "votes": 1 },
+        { "id": 5, "name": "Pulp Fiction", "rating": 4.0, "votes": 1 },
+        { "id": 6, "name": "Schindler's List", "rating": 3.8, "votes": 1 },
+        { "id": 7, "name": "The Good, the Bad and the Ugly", "rating": 3.6, "votes": 1 },
+        { "id": 8, "name": "12 Angry Men", "rating": 3.4, "votes": 1 },
+        { "id": 9, "name": "Inception", "rating": 3.2, "votes": 1 },
+        { "id": 10, "name": "Fight Club", "rating": 3.0, "votes": 1 },
+        { "id": 11, "name": "Forrest Gump", "rating": 2.8, "votes": 1 },
+        { "id": 12, "name": "Star Wars: Episode V - The Empire Strikes Back", "rating": 2.6, "votes": 1 },
+        { "id": 13, "name": "Spider-Man: Into the Spider-Verse", "rating": 2.4, "votes": 1 },
+        { "id": 14, "name": "The Lord of the Rings: The Two Towers", "rating": 2.2, "votes": 1 },
+        { "id": 15, "name": "The Matrix", "rating": 2.0, "votes": 1 },
+        { "id": 16, "name": "Goodfellas", "rating": 1.8, "votes": 1 },
+        { "id": 17, "name": "One Flew Over the Cuckoo's Nest", "rating": 1.6, "votes": 1 },
+        { "id": 18, "name": "Seven Samurai", "rating": 1.4, "votes": 1 },
+        { "id": 19, "name": "Interstellar", "rating": 1.2, "votes": 1 },
+        { "id": 20, "name": "City of God", "rating": 1.0, "votes": 1 },
+        { "id": 21, "name": "Spirited Away", "rating": 0.8, "votes": 1 },
+        { "id": 22, "name": "Saving Private Ryan", "rating": 0.6, "votes": 1 },
+        { "id": 23, "name": "Life Is Beautiful", "rating": 0.4, "votes": 1 }
+    ]
+}
